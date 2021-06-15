@@ -1,0 +1,70 @@
+# depslib dependency file v1.0
+1623694757 source:c:\users\santi\onedrive\documentos\projeto programação\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<string.h>
+	<conio.h>
+	<Windows.h>
+	<ctype.h>
+	<math.h>
+	<stdlib.h>
+	"main.h"
+	"NovoVeiculo.h"
+	"MarcarIPO.h"
+
+1622992966 c:\users\santi\onedrive\documentos\projeto programação\main.h
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<string.h>
+	<conio.h>
+	<Windows.h>
+	<ctype.h>
+	<math.h>
+	<stdlib.h>
+
+1623696924 source:c:\users\santi\onedrive\documentos\projeto programação\novoveiculo.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<string.h>
+	<conio.h>
+	<Windows.h>
+	<ctype.h>
+	<math.h>
+	<stdlib.h>
+	"NovoVeiculo.h"
+
+1623700951 source:c:\users\santi\onedrive\documentos\projeto programação\marcaripo.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<string.h>
+	<conio.h>
+	<Windows.h>
+	<ctype.h>
+	<math.h>
+	<stdlib.h>
+	"main.h"
+	"MarcarIPO.h"
+
+1623696946 c:\users\santi\onedrive\documentos\projeto programação\novoveiculo.h
+
+1623698400 c:\users\santi\onedrive\documentos\projeto programação\marcaripo.h
+	"NovoVeiculo.h"
+
+1623398695 source:c:\users\santi\onedrive\documentos\projeto programação\listar.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<string.h>
+	<conio.h>
+	<Windows.h>
+	<ctype.h>
+	<math.h>
+	<stdlib.h>
+	"main.h"
+
+1623398209 source:c:\users\santi\onedrive\documentos\projeto programação\registaripo.c
+
