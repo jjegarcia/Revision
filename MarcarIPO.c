@@ -24,20 +24,23 @@ void marcarData (int indice)
 }
 void marcarMatricula (int indice)
 {
+    int respuesta=33;
     int valido=1;
     char novamatricula[8];
     fflush(stdin);
-    do
+    while(valido==1)
     {
     printf("\nInsira a matricula:");
     scanf ("%s",novamatricula);
-    if (encontraMatricula(novamatricula)!=0)
+    respuesta=encontraMatricula(novamatricula);
+    if (respuesta!=0)
         {
             printf("Matrícula Inexistente");
+         }
+        else {
             valido=0;
         }
     }
-    while (valido==0);
 }
 void marcarTipo (int indice)
 {
@@ -55,7 +58,7 @@ int encontraMatricula(char matricula[8])
     int indice;
     for (indice=0;indice<=49;++indice)
     {
-        if (strcmp("2","2")); //listaVeiculos[indice].matricula)==0)
+        if (strcmp(listaVeiculos[indice].matricula,matricula)==0)
             {
                 resposta=0;
             }
