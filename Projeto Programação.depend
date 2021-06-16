@@ -91,7 +91,7 @@
 	<math.h>
 	<stdlib.h>
 
-1623757448 source:c:\users\lauri\github\revision\main.c
+1623840269 source:c:\users\lauri\github\revision\main.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -105,7 +105,8 @@
 	"NovoVeiculo.h"
 	"MarcarIPO.h"
 
-1623768004 c:\users\lauri\github\revision\novoveiculo.h
+1623846610 c:\users\lauri\github\revision\novoveiculo.h
+	"utiles.h"
 
 1623757448 c:\users\lauri\github\revision\marcaripo.h
 	"NovoVeiculo.h"
@@ -123,7 +124,7 @@
 	"main.h"
 	"MarcarIPO.h"
 
-1623766402 source:c:\users\lauri\github\revision\novoveiculo.c
+1623840240 source:c:\users\lauri\github\revision\novoveiculo.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -137,4 +138,11 @@
 	"MarcarIPO.h"
 
 1623757448 source:c:\users\lauri\github\revision\registaripo.c
+
+1623846537 source:c:\users\lauri\github\revision\utiles.c
+	<stdio.h>
+	<string.h>
+	"utiles.h"
+
+1623846492 c:\users\lauri\github\revision\utiles.h
 

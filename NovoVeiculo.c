@@ -36,7 +36,7 @@ fflush(stdin);
          }
         else {
             valido=1;
-            listaVeiculos[0].matricula="2";
+//            listaVeiculos[0].matricula="2";
             //listaVeiculos[indice] .matricula=*matricula;
             //matriculas[0].matricula_tipo="eee";
         }

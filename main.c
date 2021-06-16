@@ -10,7 +10,7 @@
 #include "main.h"
 #include "NovoVeiculo.h"
 #include "MarcarIPO.h"
-int main(){
+int imain(){
 indice=0;
 SetConsoleTitle("Software Centro IPO");
 setlocale(LC_ALL,"");
