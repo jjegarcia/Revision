@@ -9,6 +9,7 @@
 #include <stdlib.h>
 #include "NovoVeiculo.h"
 #include "MarcarIPO.h"
+#include "utiles.h"
 
 void pedirNovoVeiculo (int indice)
 {
@@ -29,16 +30,15 @@ fflush(stdin);
     {
     printf("Matrícula:\t");
     scanf("%s",matricula);
-    respuesta=encontraMatricula(matricula);
+    strcat(matricula,";");
+    respuesta= encontraMatricula(matricula);
     if (respuesta!=1)
         {
             printf("Matrícula existente");
          }
         else {
             valido=1;
-//            listaVeiculos[0].matricula="2";
-            //listaVeiculos[indice] .matricula=*matricula;
-            //matriculas[0].matricula_tipo="eee";
+            setC(matricula,indice,listaVeiculos);
         }
     }
 }

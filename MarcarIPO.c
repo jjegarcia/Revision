@@ -58,7 +58,7 @@ int encontraMatricula(char matricula[8])
     int indice;
     for (indice=0;indice<=49;++indice)
     {
-        if (strcmp(listaVeiculos[indice].matricula,matricula)==0)
+        if (strcmp(getC(listaVeiculos, indice),matricula)==0)
             {
                 resposta=0;
             }
