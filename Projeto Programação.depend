@@ -147,3 +147,82 @@
 
 1623922569 c:\users\lauri\github\revision\utiles.h
 
+1623843043 source:c:\users\santi\onedrive\documentos\github\revision\listar.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<string.h>
+	<conio.h>
+	<Windows.h>
+	<ctype.h>
+	<math.h>
+	<stdlib.h>
+	"main.h"
+
+1623843043 c:\users\santi\onedrive\documentos\github\revision\main.h
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<string.h>
+	<conio.h>
+	<Windows.h>
+	<ctype.h>
+	<math.h>
+	<stdlib.h>
+
+1623935132 source:c:\users\santi\onedrive\documentos\github\revision\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<string.h>
+	<conio.h>
+	<Windows.h>
+	<ctype.h>
+	<math.h>
+	<stdlib.h>
+	"main.h"
+	"NovoVeiculo.h"
+	"MarcarIPO.h"
+
+1623935026 c:\users\santi\onedrive\documentos\github\revision\novoveiculo.h
+	"utiles.h"
+
+1623955800 c:\users\santi\onedrive\documentos\github\revision\utiles.h
+
+1623955709 c:\users\santi\onedrive\documentos\github\revision\marcaripo.h
+	"NovoVeiculo.h"
+
+1623955709 source:c:\users\santi\onedrive\documentos\github\revision\marcaripo.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<string.h>
+	<conio.h>
+	<Windows.h>
+	<ctype.h>
+	<math.h>
+	<stdlib.h>
+	"main.h"
+	"MarcarIPO.h"
+
+1623953908 source:c:\users\santi\onedrive\documentos\github\revision\novoveiculo.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<string.h>
+	<conio.h>
+	<Windows.h>
+	<ctype.h>
+	<math.h>
+	<stdlib.h>
+	"NovoVeiculo.h"
+	"MarcarIPO.h"
+	"utiles.h"
+
+1623935026 source:c:\users\santi\onedrive\documentos\github\revision\registaripo.c
+
+1623959656 source:c:\users\santi\onedrive\documentos\github\revision\utiles.c
+	<stdio.h>
+	<string.h>
+	"utiles.h"
+

@@ -12,7 +12,6 @@ void marcarNovaIPO();
 void marcarData();
 void marcarMatricula();
 void marcarTipo();
-int encontraMatricula(char matricula[8]);
 t_MarcarIPO novaMarcacao[10];
 t_data dataMarc;
 int matcomp;

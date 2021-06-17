@@ -33,12 +33,13 @@ void marcarMatricula (int indice)
     printf("\nInsira a matricula:");
     scanf ("%s",novamatricula);
     respuesta=encontraMatricula(novamatricula);
-    if (respuesta!=0)
+    if (respuesta==0 || vazio==0)
         {
-            printf("Matrícula Inexistente");
-         }
-        else {
+            vazio=1;
             valido=0;
+        }
+        else {
+    printf("Matrícula Inexistente");
         }
     }
 }
@@ -52,16 +53,3 @@ void marcarTipo (int indice)
     novaMarcacao[indice].tipoIpo[0]=tipoIpo;
 }
 
-int encontraMatricula(char matricula[8])
-{
-    int resposta=1;
-    int indice;
-    for (indice=0;indice<=49;++indice)
-    {
-        if (strcmp(getC(listaVeiculos, indice),matricula)==0)
-            {
-                resposta=0;
-            }
-    }
-return resposta;
-}
