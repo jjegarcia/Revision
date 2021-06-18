@@ -108,10 +108,10 @@
 1624001001 c:\users\lauri\github\revision\novoveiculo.h
 	"utiles.h"
 
-1624018755 c:\users\lauri\github\revision\marcaripo.h
+1624020134 c:\users\lauri\github\revision\marcaripo.h
 	"utiles.h"
 
-1624018706 source:c:\users\lauri\github\revision\marcaripo.c
+1624020205 source:c:\users\lauri\github\revision\marcaripo.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -140,7 +140,7 @@
 
 1623757448 source:c:\users\lauri\github\revision\registaripo.c
 
-1624009254 source:c:\users\lauri\github\revision\utiles.c
+1624019038 source:c:\users\lauri\github\revision\utiles.c
 	<stdio.h>
 	<string.h>
 	"utiles.h"

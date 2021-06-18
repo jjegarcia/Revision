@@ -22,4 +22,5 @@ void marcarData();
 int marcarMatricula();
 void marcarTipo();
 void marcarIPO();
+void guardar();
 #endif // MARCARIPO_H_INCLUDED

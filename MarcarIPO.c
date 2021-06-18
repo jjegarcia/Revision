@@ -12,7 +12,6 @@
 
 void marcarNovaIPO()
 {
-    int IPO_indice=-1;
     int matricula_indice=-1;
     marcarData();
     matricula_indice=marcarMatricula();
@@ -47,15 +46,27 @@ int marcarMatricula ()
 }
 void marcarTipo ()
 {
-    int tipoIpo;
     printf("\nSelecione o tipo de inspeção:\n");
     printf("1.Periódica\t2.Reinspeção\t4.Extraordinária\t");
     scanf("%d", &novoIPORegistro.tipoIpo);
 }
 
 void marcarIPO(){
-//   novaMarcacao[IPO_indice_global].mMatricula=novoIPORegistro.mMatricula;
-//    novaMarcacao[IPO_indice_global].novaData.mes=dataMarc.mes;
+    guardar(novaMarcacao[IPO_indice_global].novaData.mes,novoIPORegistro.novaData.mes);
+    guardar(novaMarcacao[IPO_indice_global].novaData.ano,novoIPORegistro.novaData.ano);
+    guardar(novaMarcacao[IPO_indice_global].novaData.dia,novoIPORegistro.novaData.dia);
+    guardar(novaMarcacao[IPO_indice_global].mMatricula,novoIPORegistro.mMatricula);
     novaMarcacao[IPO_indice_global].tipoIpo=novoIPORegistro.tipoIpo;
     IPO_indice_global++;
+}
+
+void guardar(char vector[],char dato[]){
+    int counter = 0;
+    char acc;
+    while (counter <8)
+    {
+        acc=dato[counter];
+        vector[counter] = acc;
+        counter++;
+    }
 }
