@@ -13,12 +13,13 @@ typedef struct
     int resultado[1];
 }t_fichaVeiculo;
 
+int indice_global;
 t_fichaVeiculo listaVeiculos[50];
 
 
-void setC(char value[8], int index, t_fichaVeiculo list[50]);
-char getC(t_fichaVeiculo list[50], int index);
-void printC(t_fichaVeiculo list[50], int index);
+void setC(char value[8]);
+char getC(int index);
+void printC(int index);
 int encontraMatricula(char matricula[8]);
 
 
