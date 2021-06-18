@@ -54,7 +54,7 @@ void pedirtVeiculo ()
     printf("Tipo de Veiculo:\n");
     printf("1.Ligeiro\n2.Pesado\n3.Reboque\n4.Motociclo\n");
     scanf("%d",&tipoVeiculo);
-    listaVeiculos[indice_global].tipoVeiculo[0]=tipoVeiculo;
+    listaVeiculos[indice_global].tipoVeiculo=tipoVeiculo;
 }
 void pedirNome()
 {
