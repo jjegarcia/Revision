@@ -26,6 +26,7 @@ void marcarData ()
     scanf("%2d%2d%4d",novoIPORegistro.novaData.dia,
            novoIPORegistro.novaData.mes,
            novoIPORegistro.novaData.ano);
+           resposta=contarData(novoIPORegistro.novaData);
     } while(resposta==-1);
 }
 int marcarMatricula ()

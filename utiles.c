@@ -25,7 +25,6 @@ void setC(char value[8])
         listaVeiculos[indice_global].matricula[counter] = acc;
         counter++;
     }
-    indice_global++;
 }
 
 
