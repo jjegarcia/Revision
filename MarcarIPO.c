@@ -24,7 +24,7 @@ void marcarData (int indice)
 }
 void marcarMatricula (int indice)
 {
-    int respuesta=33;
+    int resposta=-1;
     int valido=1;
     char novamatricula[8];
     fflush(stdin);
@@ -32,8 +32,8 @@ void marcarMatricula (int indice)
     {
     printf("\nInsira a matricula:");
     scanf ("%s",novamatricula);
-    respuesta=encontraMatricula(novamatricula);
-    if (respuesta!=0)
+    resposta=encontraMatricula(novamatricula);
+    if (resposta==-1)
         {
             printf("Matrícula Inexistente");
          }
