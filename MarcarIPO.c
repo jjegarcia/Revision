@@ -18,7 +18,6 @@ void marcarNovaIPO(int indice)
 }
 void marcarData (int indice)
 {
-
     printf("\nInsira a data da marcação:");
     scanf("%2d%2d%4d",dataMarc.dia, dataMarc.mes, dataMarc.ano);
 }
@@ -35,7 +34,7 @@ void marcarMatricula (int indice)
     resposta=encontraMatricula(novamatricula);
     if (resposta==-1)
         {
-            printf("Matrícula Inexistente");
+            printf("\nMatrícula Inexistente\n");
          }
         else {
             valido=0;
@@ -45,9 +44,17 @@ void marcarMatricula (int indice)
 void marcarTipo (int indice)
 {
 
-    int tipoIpo;
-    printf("\nSelecione o tipo de inspeção:\n");
-    printf("1.Periódica\t2.Reinspeção\t4.Extraordinária\t");
-    scanf("%d", &tipoIpo);
-    novaMarcacao[indice].tipoIpo[0]=tipoIpo;
+    int t;
+    do
+    {
+        printf("\nSelecione o tipo de inspeção:\n");
+        printf("1.Periódica\t2.Reinspeção\t3.Nova Matr\t4.Extraordinária\t");
+        scanf("%d", &t);
+        if (t!=1&&t!=2&&t!=3&&t!=4)
+            {
+                printf("\nOpção Inválida");
+            }
+    }
+    while (t!=1&&t!=2&&t!=3&&t!=4);
+    novaMarcacao[indice].tipoIpo[0]=t;
 }

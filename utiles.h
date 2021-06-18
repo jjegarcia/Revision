@@ -10,7 +10,7 @@ typedef struct
     int tipoVeiculo[1];
     char proprietario[100];
     t_data dataUltima;
-    int resultado[1];
+    int resultado;
 }t_fichaVeiculo;
 
 int indice_global;
