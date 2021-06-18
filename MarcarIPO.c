@@ -20,10 +20,13 @@ void marcarNovaIPO()
 }
 void marcarData ()
 {
+    int resposta =-1;
+    do {
     printf("\nInsira a data da marcação:");
     scanf("%2d%2d%4d",novoIPORegistro.novaData.dia,
            novoIPORegistro.novaData.mes,
            novoIPORegistro.novaData.ano);
+    } while(resposta==-1);
 }
 int marcarMatricula ()
 {
@@ -58,15 +61,4 @@ void marcarIPO(){
     guardar(novaMarcacao[IPO_indice_global].mMatricula,novoIPORegistro.mMatricula);
     novaMarcacao[IPO_indice_global].tipoIpo=novoIPORegistro.tipoIpo;
     IPO_indice_global++;
-}
-
-void guardar(char vector[],char dato[]){
-    int counter = 0;
-    char acc;
-    while (counter <8)
-    {
-        acc=dato[counter];
-        vector[counter] = acc;
-        counter++;
-    }
 }
