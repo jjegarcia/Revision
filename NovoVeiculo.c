@@ -9,58 +9,62 @@
 #include <stdlib.h>
 #include "NovoVeiculo.h"
 #include "MarcarIPO.h"
+#include "utiles.h"
 
-void pedirNovoVeiculo (int indice)
+void pedirNovoVeiculo ()
 {
-    pedirMatricula(indice);
-    pedirtVeiculo(indice);
-    pedirNome(indice);
-    pedirDataIPO(indice);
+    pedirMatricula();
+    pedirtVeiculo();
+    pedirNome();
+    pedirDataIPO();
 }
-void pedirMatricula(int indice)
+void pedirMatricula()
 {
-    int respuesta;
+    int resposta;
     int valido=0;
-   char matricula[8];
-
-   //matricula_tipo matriculas[8];
-fflush(stdin);
+    char matricula[8];
+    fflush(stdin);
     while(valido==0)
     {
     printf("Matrícula:\t");
     scanf("%s",matricula);
-    respuesta=encontraMatricula(matricula);
-    if (respuesta!=1)
-        {
-            printf("Matrícula existente");
-         }
-        else {
-            valido=1;
-//            listaVeiculos[0].matricula="2";
-            //listaVeiculos[indice] .matricula=*matricula;
-            //matriculas[0].matricula_tipo="eee";
+    if (vazio !=0){
+        resposta= encontraMatricula(matricula);
+        if (resposta!=-1)
+            {
+                printf("Matrícula existente");
+            }
+            else {
+                    valido=1;
+                    setC(matricula);
+            }
         }
+    else {
+        vazio=1;
+        valido=1;
+        setC(matricula);
+         }
     }
 }
 
-void pedirtVeiculo (int indice)
+void pedirtVeiculo ()
 {
-fflush(stdin);
-int tipoVeiculo;
-printf("Tipo de Veiculo:\n");
-printf("1.Ligeiro\n2.Pesado\n3.Reboque\n4.Motociclo\n");
-scanf("%d",&tipoVeiculo);
-listaVeiculos[indice].tipoVeiculo[0]=tipoVeiculo;
+    fflush(stdin);
+    int tipoVeiculo;
+    printf("Tipo de Veiculo:\n");
+    printf("1.Ligeiro\n2.Pesado\n3.Reboque\n4.Motociclo\n");
+    scanf("%d",&tipoVeiculo);
+    listaVeiculos[indice_global].tipoVeiculo[0]=tipoVeiculo;
 }
-void pedirNome(int indice)
+void pedirNome()
 {
-fflush(stdin);
-printf("\nNome do Proprietário:\t");
-gets(listaVeiculos[indice] .proprietario);
+    fflush(stdin);
+    printf("\nNome do Proprietário:\t");
+    gets(listaVeiculos[indice_global] .proprietario);
 }
-void pedirDataIPO(int indice)
+void pedirDataIPO()
 {
-fflush(stdin);
-printf("\nData última IPO:\t");
-scanf("%2d%2d%4d",dataipo.dia, dataipo.mes, dataipo.ano);
+    fflush(stdin);
+    printf("\nData última IPO:\t");
+    scanf("%2d%2d%4d",dataipo.dia, dataipo.mes, dataipo.ano);
 }

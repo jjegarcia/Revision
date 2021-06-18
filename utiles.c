@@ -2,59 +2,63 @@
 #include <string.h>
 #include "utiles.h"
 
-
-
-int main(int argc, char const *argv[])
-{
-    char t[9];
-
-    printf("enter a string:");
-    scanf("%s", t);
-    strcat(t,";");
-
-    setC(t, 0, lista);
-
-    printf("saved:");
-    printC(lista, 0);
-
-    return 0;
-}
-
-void printC(t_fichaVeiculo list[10], int index)
+void printC(int index)
 {
     int counter = 0;
     char acc;
     while (counter <9)
     {
-        acc = list[index].matricula[counter];
+        acc = listaVeiculos[index].matricula[counter];
         printf("%c", acc);
         counter++;
     }
     printf("\n");
 }
 
-void setC(char value[9], int index, t_fichaVeiculo list[10])
+void setC(char value[8])
 {
     int counter = 0;
     char acc;
-    while (value[counter] != ';')
+    while (counter <8)
     {
         acc=value[counter];
-       list[index].matricula[counter] = acc;
-       counter++;
+        listaVeiculos[indice_global].matricula[counter] = acc;
+        counter++;
     }
+    indice_global++;
 }
 
-char *getC(t_fichaVeiculo list[10], int index)
+/*
+char getC(int index)
 {
     int counter = 0;
-    char *value[9];
-    do
+    char acc='a';
+    char registro[8];
+    while (counter <51)
     {
-        *value += list[index].matricula[counter];
+        if (vazio !=0){
+        acc = listaVeiculos[index].matricula[counter];
+        strcat(registro,acc);
+        §§
         counter++;
-    } while (list[index].matricula[counter] == ';');
-
-    return *value;
+    }
+    printf("\n");
+}
+*/
+int encontraMatricula(char matricula[8])
+{
+    int resposta=-1;
+    int indice=0;
+    while (indice<50 && resposta!=indice)
+    {
+        if (strcmp(listaVeiculos[indice].matricula,matricula)==0)
+             {
+                resposta=indice;
+            }
+            else{
+                    indice++;
+            }
+    }
+return resposta;
 }
 

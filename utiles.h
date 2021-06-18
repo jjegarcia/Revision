@@ -4,7 +4,7 @@ typedef struct
 {
     int dia[2], mes[2], ano[4];
 }t_data;
-
+    int vazio;
     typedef struct{
     char matricula[8];
     int tipoVeiculo[1];
@@ -13,12 +13,14 @@ typedef struct
     int resultado[1];
 }t_fichaVeiculo;
 
-t_fichaVeiculo lista[10];
+int indice_global;
+t_fichaVeiculo listaVeiculos[50];
 
 
-void setC(char value[9], int index, t_fichaVeiculo list[10]);
-char *getC(t_fichaVeiculo list[10], int index);
-void printC(t_fichaVeiculo list[10], int index);
+void setC(char value[8]);
+char getC(int index);
+void printC(int index);
+int encontraMatricula(char matricula[8]);
 
 
 #endif // UTILES_H_INCLUDED

@@ -1,15 +1,15 @@
 #include "utiles.h"
 #ifndef NOVOVEICULO_H_INCLUDED
 #define NOVOVEICULO_H_INCLUDED
+t_data dataipo;
+
 void pedirNovoVeiculo();
 void pedirMatricula();
 void pedirDataIPO();
 void pedirNome();
 void pedirtVeiculo();
-t_fichaVeiculo listaVeiculos[50];
-int indice;
-t_data dataipo;
-//struct char matricula_tipo[8];
+void anadirVehiculo();
+
 
 
 #endif // NOVOVEICULO_H_INCLUDED
