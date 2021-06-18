@@ -37,7 +37,7 @@ int marcarMatricula ()
     resposta=encontraMatricula(novoIPORegistro.mMatricula);
     if (resposta==-1)
         {
-            printf("Matrícula Inexistente");
+            printf("\nMatrícula Inexistente");
          }
         else {
             valido=0;
@@ -46,9 +46,19 @@ int marcarMatricula ()
 }
 void marcarTipo ()
 {
-    printf("\nSelecione o tipo de inspeção:\n");
-    printf("1.Periódica\t2.Reinspeção\t4.Extraordinária\t");
-    scanf("%d", &novoIPORegistro.tipoIpo);
+    int t;
+    do
+    {
+        printf("\nSelecione o tipo de inspeção:\n");
+        printf("1.Periódica\t2.Reinspeção\t3.Nova Matr\t4.Extraordinária\t");
+        scanf("%d", &t);
+        if (t!=1&&t!=2&&t!=3&&t!=4)
+            {
+                printf("\nOpção Inválida");
+            }
+    }
+    while (t!=1&&t!=2&&t!=3&&t!=4);
+    novaMarcacao[indice].tipoIpo[0]=t;
 }
 
 void marcarIPO(){
