@@ -51,17 +51,3 @@ void marcarTipo (int indice)
     scanf("%d", &tipoIpo);
     novaMarcacao[indice].tipoIpo[0]=tipoIpo;
 }
-
-int encontraMatricula(char matricula[8])
-{
-    int resposta=1;
-    int indice;
-    for (indice=0;indice<=49;++indice)
-    {
-        if (strcmp(getC(listaVeiculos, indice),matricula)==0)
-            {
-                resposta=0;
-            }
-    }
-return resposta;
-}

@@ -19,9 +19,9 @@ void setC(char value[8], int index, t_fichaVeiculo list[50])
 {
     int counter = 0;
     char acc;
-    while (value[counter] != ';')
+    while (value[counter] <8)
     {
-        list[index].vazio=1;
+        vazio=1;
         acc=value[counter];
        list[index].matricula[counter] = acc;
        counter++;
@@ -35,7 +35,7 @@ char getC(t_fichaVeiculo list[50], int index)
     char registro[8];
     while (counter <51)
     {
-        if (list[index].vazio !=0){
+        if (vazio !=0){
         acc = list[index].matricula[counter];
         strcat(registro,acc);
         }
@@ -43,3 +43,19 @@ char getC(t_fichaVeiculo list[50], int index)
     }
     printf("\n");
 }
+
+int encontraMatricula(char matricula[8])
+{
+    int resposta=1;
+    int indice;
+    for (indice=0;indice<=49;++indice)
+    {
+        if (strcmp(listaVeiculos[indice].matricula,matricula)==0)
+                   //getC(listaVeiculos, indice),matricula)==0)
+            {
+                resposta=0;
+            }
+    }
+return resposta;
+}
+

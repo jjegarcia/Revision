@@ -30,7 +30,6 @@ fflush(stdin);
     {
     printf("Matrícula:\t");
     scanf("%s",matricula);
-    strcat(matricula,";");
     respuesta= encontraMatricula(matricula);
     if (respuesta!=1)
         {
