@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "utiles.h"
-
+int MAX_CONTA=10;
 void printC(int index)
 {
     int counter = 0;
@@ -44,5 +44,37 @@ int encontraMatricula(char matricula[8])
             }
     }
 return resposta;
+}
+
+void guardar(char vector[],char dato[]){
+    int counter = 0;
+    char acc;
+    while (counter <8)
+    {
+        acc=dato[counter];
+        vector[counter] = acc;
+        counter++;
+    }
+}
+
+int contarData(t_data data)
+{
+    int resposta=-1;
+    int conta=0;
+    int indice=0;
+    while (indice<IPO_indice_global)
+    {
+        if (strcmp(novaMarcacao[indice].novaData.ano,data.ano)==0 &&
+            strcmp(novaMarcacao[indice].novaData.dia,data.dia)==0 &&
+             strcmp(novaMarcacao[indice].novaData.mes,data.mes)==0
+            )
+            {
+                conta++;
+            }
+    }
+    if (conta<MAX_CONTA){
+        resposta=1;
+    }
+    return resposta;
 }
 
