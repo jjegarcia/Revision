@@ -19,6 +19,7 @@ void pedirNovoVeiculo ()
     pedirDataIPO();
     indice_global++;
 }
+
 void pedirMatricula()
 {
     int resposta;
@@ -50,22 +51,32 @@ void pedirMatricula()
 
 void pedirtVeiculo ()
 {
+    int valido=0;
     fflush(stdin);
     int tipoVeiculo;
+    while (valido==0){
     printf("Tipo de Veiculo:\n");
     printf("1.Ligeiro\n2.Pesado\n3.Reboque\n4.Motociclo\n");
     scanf("%d",&tipoVeiculo);
+        if (tipoVeiculo>0 && tipoVeiculo<5){
+            valido=1;
+        }
+    }
     listaVeiculos[indice_global].tipoVeiculo=tipoVeiculo;
 }
+
 void pedirNome()
 {
     fflush(stdin);
     printf("\nNome do Proprietário:\t");
     gets(listaVeiculos[indice_global] .proprietario);
 }
+
 void pedirDataIPO()
 {
     fflush(stdin);
     printf("\nData última IPO:\t");
-    scanf("%2d%2d%4d",dataipo.dia, dataipo.mes, dataipo.ano);
+    listaVeiculos[indice_global].dataUltima.dia= dia();
+    listaVeiculos[indice_global].dataUltima.mes=mes();
+    listaVeiculos[indice_global].dataUltima.ano=ano();
 }

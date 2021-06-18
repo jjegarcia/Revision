@@ -63,10 +63,9 @@ int contarData(t_data data)
     int indice=0;
     while (indice<IPO_indice_global)
     {
-        if (strcmp(novaMarcacao[indice].novaData.ano,data.ano)==0 &&
-            strcmp(novaMarcacao[indice].novaData.dia,data.dia)==0 &&
-             strcmp(novaMarcacao[indice].novaData.mes,data.mes)==0
-            )
+        if (novaMarcacao[indice].novaData.ano==data.ano &&
+            novaMarcacao[indice].novaData.dia==data.dia &&
+            novaMarcacao[indice].novaData.mes==data.mes)
             {
                 conta++;
             }
@@ -77,3 +76,41 @@ int contarData(t_data data)
     return resposta;
 }
 
+int dia(){
+    int valido=0;
+    int dia;
+    while (valido==0){
+        printf("\ndia:");
+        scanf("%d",&dia);
+        if (dia>0 && dia<32){
+            valido=1;
+        }
+    }
+    return dia;
+}
+
+int mes(){
+    int valido=0;
+    int mes;
+    while (valido==0){
+        printf("\nmes:");
+        scanf("%d",&mes);
+        if (mes>0 && mes<12){
+            valido=1;
+        }
+    }
+    return mes;
+}
+
+int ano(){
+    int valido=0;
+    int ano;
+    while (valido==0){
+            printf("\nano:");
+        scanf("%d",&ano);
+        if (ano>0 && ano<3000){
+            valido=1;
+        }
+    }
+    return ano;
+}

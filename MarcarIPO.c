@@ -22,11 +22,11 @@ void marcarData ()
 {
     int resposta =-1;
     do {
-    printf("\nInsira a data da marcação:");
-    scanf("%2d%2d%4d",novoIPORegistro.novaData.dia,
-           novoIPORegistro.novaData.mes,
-           novoIPORegistro.novaData.ano);
-           resposta=contarData(novoIPORegistro.novaData);
+        printf("\nInsira a data da marcação:");
+        novoIPORegistro.novaData.dia=dia();
+        novoIPORegistro.novaData.mes=mes();
+        novoIPORegistro.novaData.ano=ano();
+        resposta=contarData(novoIPORegistro.novaData);
     } while(resposta==-1);
 }
 int marcarMatricula ()
