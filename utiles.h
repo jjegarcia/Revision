@@ -4,15 +4,15 @@ typedef struct
 {
     int dia[2], mes[2], ano[4];
 }t_data;
-    int vazio;
-    typedef struct{
+     typedef struct{
     char matricula[8];
-    int tipoVeiculo[1];
+    int tipoVeiculo;
     char proprietario[100];
     t_data dataUltima;
-    int resultado[1];
+    int resultado;
 }t_fichaVeiculo;
 
+int vazio;
 int indice_global;
 t_fichaVeiculo listaVeiculos[50];
 
