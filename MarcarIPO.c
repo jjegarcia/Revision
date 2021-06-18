@@ -21,12 +21,23 @@ void marcarNovaIPO()
 void marcarData ()
 {
     int resposta =-1;
-    do {
-    printf("\nInsira a data da marcação:");
-    scanf("%2d%2d%4d",novoIPORegistro.novaData.dia,
-           novoIPORegistro.novaData.mes,
-           novoIPORegistro.novaData.ano);
-    } while(resposta==-1);
+    if (vazio_IPO !=0){
+        do {
+            printf("\nInsira a data da marcação DD-MM-AAAA:");
+            scanf("%d",&novoIPORegistro.novaData.dia);
+            scanf("%d",&novoIPORegistro.novaData.mes);
+            scanf("%d",&novoIPORegistro.novaData.ano);
+            contarData(novoIPORegistro.novaData);
+        } while(resposta==-1);
+
+    }
+    else {
+            printf("\nInsira a data da marcação:");
+            scanf("%d",&novoIPORegistro.novaData.dia);
+            scanf("%d",&novoIPORegistro.novaData.mes);
+            scanf("%d",&novoIPORegistro.novaData.ano);
+            vazio_IPO=1;
+    }
 }
 int marcarMatricula ()
 {
@@ -36,7 +47,7 @@ int marcarMatricula ()
     while(valido==1)
     {
     printf("\nInsira a matricula:");
-    scanf ("%s",&novoIPORegistro.mMatricula);
+    scanf ("%s",novoIPORegistro.mMatricula);
     resposta=encontraMatricula(novoIPORegistro.mMatricula);
     if (resposta==-1)
         {
@@ -61,7 +72,7 @@ void marcarTipo ()
             }
     }
     while (t!=1&&t!=2&&t!=3&&t!=4);
-    novaMarcacao[indice].tipoIpo[0]=t;
+    novaMarcacao[IPO_indice_global].tipoIpo=t;
 }
 
 void marcarIPO(){

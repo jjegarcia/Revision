@@ -170,7 +170,7 @@
 	<math.h>
 	<stdlib.h>
 
-1624023003 source:c:\users\santi\onedrive\documentos\github\revision\main.c
+1624023418 source:c:\users\santi\onedrive\documentos\github\revision\main.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -183,16 +183,17 @@
 	"main.h"
 	"NovoVeiculo.h"
 	"MarcarIPO.h"
+	"RegistarIPO.h"
 
-1624023003 c:\users\santi\onedrive\documentos\github\revision\novoveiculo.h
+1624023418 c:\users\santi\onedrive\documentos\github\revision\novoveiculo.h
 	"utiles.h"
 
-1624023003 c:\users\santi\onedrive\documentos\github\revision\utiles.h
+1624034331 c:\users\santi\onedrive\documentos\github\revision\utiles.h
 
-1624023003 c:\users\santi\onedrive\documentos\github\revision\marcaripo.h
+1624031582 c:\users\santi\onedrive\documentos\github\revision\marcaripo.h
 	"utiles.h"
 
-1624023003 source:c:\users\santi\onedrive\documentos\github\revision\marcaripo.c
+1624034944 source:c:\users\santi\onedrive\documentos\github\revision\marcaripo.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -205,7 +206,7 @@
 	"main.h"
 	"MarcarIPO.h"
 
-1624023003 source:c:\users\santi\onedrive\documentos\github\revision\novoveiculo.c
+1624034926 source:c:\users\santi\onedrive\documentos\github\revision\novoveiculo.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -219,10 +220,23 @@
 	"MarcarIPO.h"
 	"utiles.h"
 
-1624023003 source:c:\users\santi\onedrive\documentos\github\revision\registaripo.c
+1624032630 source:c:\users\santi\onedrive\documentos\github\revision\registaripo.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<string.h>
+	<conio.h>
+	<Windows.h>
+	<ctype.h>
+	<math.h>
+	<stdlib.h>
+	"RegistarIPO.h"
+	"utiles.h"
 
-1624023003 source:c:\users\santi\onedrive\documentos\github\revision\utiles.c
+1624031770 source:c:\users\santi\onedrive\documentos\github\revision\utiles.c
 	<stdio.h>
 	<string.h>
 	"utiles.h"
+
+1624023418 c:\users\santi\onedrive\documentos\github\revision\registaripo.h
 

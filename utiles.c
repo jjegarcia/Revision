@@ -64,10 +64,9 @@ int contarData(t_data data)
     int indice=0;
     while (indice<IPO_indice_global)
     {
-        if (strcmp(novaMarcacao[indice].novaData.ano,data.ano)==0 &&
-            strcmp(novaMarcacao[indice].novaData.dia,data.dia)==0 &&
-             strcmp(novaMarcacao[indice].novaData.mes,data.mes)==0
-            )
+        if (novaMarcacao[indice].novaData.ano==data.ano &&
+            novaMarcacao[indice].novaData.dia==data.dia &&
+            novaMarcacao[indice].novaData.mes==data.mes)
             {
                 conta++;
             }

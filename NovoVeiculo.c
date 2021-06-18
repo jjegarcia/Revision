@@ -75,7 +75,10 @@ void pedirDataIPO()
 {
     fflush(stdin);
     printf("\nData última IPO:\t");
-    scanf("%2d%2d%4d",dataipo.dia, dataipo.mes, dataipo.ano);
+    scanf("%d",&dataipo.dia);
+    scanf("%d",&dataipo.mes);
+    scanf("%d",&dataipo.ano);
+
 }
 void pedirUltResultado()
 {

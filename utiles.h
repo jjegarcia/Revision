@@ -2,7 +2,7 @@
 #define UTILES_H_INCLUDED
 typedef struct
 {
-    int dia[2], mes[2], ano[4];
+    int dia, mes, ano;
 }t_data;
      typedef struct{
     char matricula[8];
@@ -30,6 +30,7 @@ int matcomp;
 t_fichaVeiculo matricula;
 char novaMatricula[8];
 int IPO_indice_global;
+int vazio_IPO;
 
 
 void setC(char value[8]);
