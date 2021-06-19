@@ -21,6 +21,9 @@ typedef struct
     t_data novaData;
     char mMatricula[8];
     int tipoIpo;
+    char anot [200];
+    float custo;
+    int hora, minuto, duracao, resultado;
 }t_MarcarIPO;
 
 t_MarcarIPO novoIPORegistro;
