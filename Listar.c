@@ -15,7 +15,7 @@ void listar ()
      printf("\n \t\t\t\tListar\n");
      printf("1.Dados Totais\n");
      printf("2.Dados IPO Marcadas \n");
-     printf("3.Dados Efetuadas \n");
+     printf("3.Dados IPO Efetuadas \n");
      printf("4.Dados Veículo\n");
      printf("5.Dados Marcação do Veículo\n");
      printf("0. Regressar ao menu inicial\n");
@@ -27,7 +27,7 @@ void listar ()
              VtotList();
              break;
          case '2':
-             //MList();
+             MList();
              break;
          case '3':
              //EfList();
@@ -47,5 +47,31 @@ void listar ()
 
 void VtotList ()
 {
-    printf("%s", *listaVeiculos);
+    int loop;
+    printf("Matrícula\tTipo Veiculo\tProprietario\t\tData\t\t\tResultado\t\tNumero de IPO marcadas\n");
+    for(loop=0; loop<IPO_indice_global;loop++)
+    {
+       printf(" %s\t\t%d\t%s\t\t%d/%d/%d\t%d\t%d\n",listaVeiculos[loop].matricula,
+              listaVeiculos[loop].tipoVeiculo,
+              listaVeiculos[loop].proprietario,
+              listaVeiculos[loop].dataUltima.dia,
+              listaVeiculos[loop].dataUltima.mes,
+              listaVeiculos[loop].dataUltima.ano,
+              listaVeiculos[loop].resultado,
+              contarMatricula(listaVeiculos[loop].matricula));
+    }
+
 }
+void MList ()
+{
+    int loop;
+    printf("Data Marcação\t\tMatricula\t\tTipo IPO\n");
+    for(loop=0; loop<IPO_indice_global;loop++);
+    printf("%d/%d/%d\t\t%s\t\t%d",
+           novaMarcacao[loop].novaData.dia,
+           novaMarcacao[loop].novaData.mes,
+           novaMarcacao[loop].novaData.ano,
+           novaMarcacao[loop].mMatricula,
+           novaMarcacao[loop].tipoIpo);
+}
+

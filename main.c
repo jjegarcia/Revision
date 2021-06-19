@@ -12,6 +12,7 @@
 #include "MarcarIPO.h"
 #include "RegistarIPO.h"
 #include "Listar.h"
+
 int main(){
 indice_global=0;
 SetConsoleTitle("Software Centro IPO");

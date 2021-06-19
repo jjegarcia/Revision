@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "utiles.h"
+#include "main.h"
 int MAX_CONTA=10;
 void printC(int index)
 {
@@ -114,4 +115,20 @@ int ano(){
         }
     }
     return ano;
+}
+
+int contarMatricula(char matricula[8])
+{
+    int conta=0;
+    int indice=0;
+    while (indice<IPO_indice_global)
+    {
+        if (strcmp(novaMarcacao[indice].mMatricula,matricula)==0)
+            {
+                conta++;
+            }
+        indice++;
+    }
+
+    return conta;
 }

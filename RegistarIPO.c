@@ -9,6 +9,7 @@
 #include <stdlib.h>
 #include "RegistarIPO.h"
 #include "utiles.h"
+#include "main.h"
 void novoRegisto ()
 {
     void regHorario();
@@ -26,5 +27,5 @@ void regHorario ()
     printf("\nInsira os minutos:");
     scanf("%d", &m);
     printf("\nO Horário registado é %d:%d", h,m);
-    registos[indice_global].horario=h&&m
+    //registos[indice_global].horario=h&&m;
 }

@@ -23,7 +23,7 @@ typedef struct
     int tipoIpo;
 }t_MarcarIPO;
 
-t_MarcarIPO novoIPORegistro;
+t_MarcarIPO novoIPORegisto;
 t_MarcarIPO novaMarcacao[300];
 t_data dataMarc;
 int matcomp;
