@@ -37,7 +37,7 @@ char escolha='7';
              marcarNovaIPO(indice_global);
              break;
          case '3':
-             novoRegisto(indice_global);
+             registarnovaIPO(indice_global);
              break;
          case '4':/*Listar*/
              break;
