@@ -2,7 +2,7 @@
 #define UTILES_H_INCLUDED
 typedef struct
 {
-    int dia[2], mes[2], ano[4];
+    int dia, mes, ano;
 }t_data;
      typedef struct{
     char matricula[8];
@@ -38,4 +38,7 @@ void printC(int index);
 int encontraMatricula(char matricula[8]);
 void guardar(char vector[],char dato[]);
 int contarData(t_data data);
+int dia();
+int mes();
+int ano();
 #endif // UTILES_H_INCLUDED

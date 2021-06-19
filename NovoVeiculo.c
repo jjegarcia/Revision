@@ -17,8 +17,9 @@ void pedirNovoVeiculo ()
     pedirtVeiculo();
     pedirNome();
     pedirDataIPO();
-    pedirUltResultado();
+    indice_global++;
 }
+
 void pedirMatricula()
 {
     int resposta;
@@ -27,13 +28,13 @@ void pedirMatricula()
     fflush(stdin);
     while(valido==0)
     {
-    printf("Matrícula:\t");
+    printf("MatrÃ­cula:\t");
     scanf("%s",matricula);
     if (vazio !=0){
         resposta= encontraMatricula(matricula);
         if (resposta!=-1)
             {
-                printf("Matrícula existente");
+                printf("MatrÃ­cula existente");
             }
             else {
                     valido=1;
@@ -50,32 +51,35 @@ void pedirMatricula()
 
 void pedirtVeiculo ()
 {
+    int valido=0;
     fflush(stdin);
     int tipoVeiculo;
-     do
-    {
-        printf("Tipo de Veiculo:\n");
-        printf("1.Ligeiro\n2.Pesado\n3.Reboque\n4.Motociclo\n");
-        scanf("%d",&tipoVeiculo);
-        if (tipoVeiculo!=1&&tipoVeiculo!=2&&tipoVeiculo!=3&&tipoVeiculo!=4)
-            {
-                printf("\nOpção Inválida\n");
-            }
+
+    while (valido==0){
+    printf("Tipo de Veiculo:\n");
+    printf("1.Ligeiro\n2.Pesado\n3.Reboque\n4.Motociclo\n");
+    scanf("%d",&tipoVeiculo);
+        if (tipoVeiculo>0 && tipoVeiculo<5){
+            valido=1;
+        }
     }
-    while(tipoVeiculo!=1&&tipoVeiculo!=2&&tipoVeiculo!=3&&tipoVeiculo!=4);
     listaVeiculos[indice_global].tipoVeiculo=tipoVeiculo;
 }
+
 void pedirNome()
 {
     fflush(stdin);
-    printf("\nNome do Proprietário:\t");
+    printf("\nNome do ProprietÃ¡rio:\t");
     gets(listaVeiculos[indice_global] .proprietario);
 }
+
 void pedirDataIPO()
 {
     fflush(stdin);
-    printf("\nData última IPO:\t");
-    scanf("%2d%2d%4d",dataipo.dia, dataipo.mes, dataipo.ano);
+    printf("\nData Ãºltima IPO:\t");
+    listaVeiculos[indice_global].dataUltima.dia= dia();
+    listaVeiculos[indice_global].dataUltima.mes=mes();
+    listaVeiculos[indice_global].dataUltima.ano=ano();
 }
 void pedirUltResultado()
 {
@@ -84,11 +88,11 @@ void pedirUltResultado()
     do
         {
             fflush(stdin);
-            printf("\n Insira o resultado da última IPO: \n1.Aprovado\n0.Reprovado\n");
+            printf("\n Insira o resultado da Ãºltima IPO: \n1.Aprovado\n0.Reprovado\n");
             scanf("%d",&r);
             if (r!=1&&r!=0)
                 {
-                    printf("\nOpção Inválida\n");
+                    printf("\nOpÃ§Ã£o InvÃ¡lida\n");
                 }
         }
     while(r!=1&&r!=0);
