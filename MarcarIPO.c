@@ -10,55 +10,65 @@
 #include "main.h"
 #include "MarcarIPO.h"
 
-void marcarNovaIPO(int indice)
+void marcarNovaIPO()
 {
-  marcarData(indice);
-  marcarMatricula(indice);
-  marcarTipo(indice);
+    int matricula_indice=-1;
+    marcarData();
+    matricula_indice=buscaMatricula();
+    marcarTipo();
+    marcarIPO();
 }
-void marcarData (int indice)
+void marcarData ()
 {
-
-    printf("\nInsira a data da marcação:");
-    scanf("%2d%2d%4d",dataMarc.dia, dataMarc.mes, dataMarc.ano);
+    int resposta =-1;
+    do {
+        printf("\nInsira a data da marcaÃ§Ã£o:");
+        novoIPORegistro.novaData.dia=dia();
+        novoIPORegistro.novaData.mes=mes();
+        novoIPORegistro.novaData.ano=ano();
+        resposta=contarData(novoIPORegistro.novaData);
+    } while(resposta==-1);
 }
-void marcarMatricula (int indice)
+int buscaMatricula ()
 {
+    int resposta=-1;
     int valido=1;
-    char novamatricula[8];
     fflush(stdin);
-    do
+    while(valido==1)
     {
     printf("\nInsira a matricula:");
-    scanf ("%s",novamatricula);
-    if (encontraMatricula(novamatricula)!=0)
+    scanf ("%s",&novoIPORegistro.mMatricula);
+    resposta=encontraMatricula(novoIPORegistro.mMatricula);
+    if (resposta==-1)
         {
-            printf("Matrícula Inexistente");
+            printf("\nMatrÃ­cula Inexistente");
+         }
+        else {
             valido=0;
         }
     }
-    while (valido==0);
-}
-void marcarTipo (int indice)
-{
-
-    int tipoIpo;
-    printf("\nSelecione o tipo de inspeção:\n");
-    printf("1.Periódica\t2.Reinspeção\t4.Extraordinária\t");
-    scanf("%d", &tipoIpo);
-    novaMarcacao[indice].tipoIpo[0]=tipoIpo;
+    return resposta;
 }
 
-int encontraMatricula(char matricula[8])
+void marcarTipo ()
 {
-    int resposta=1;
-    int indice;
-    for (indice=0;indice<=49;++indice)
-    {
-        if (strcmp("2","2")); //listaVeiculos[indice].matricula)==0)
-            {
-                resposta=0;
-            }
+    int valido=0;
+    fflush(stdin);
+    while (valido==0){
+        printf("\nSelecione o tipo de inspeÃ§Ã£o:\n");
+        printf("1.PeriÃ³dica\t2.ReinspeÃ§Ã£o\t4.ExtraordinÃ¡ria\t");
+        scanf("%d", &novoIPORegistro.tipoIpo);
+        if (novoIPORegistro.tipoIpo>0 && novoIPORegistro.tipoIpo<5){
+            valido=1;
+        }
     }
-return resposta;
+ }
+
+void marcarIPO(){
+    novaMarcacao[IPO_indice_global].novaData.mes=novoIPORegistro.novaData.dia;
+    novaMarcacao[IPO_indice_global].novaData.ano=novoIPORegistro.novaData.ano;
+    novaMarcacao[IPO_indice_global].novaData.dia=novoIPORegistro.novaData.dia;
+    guardar(novaMarcacao[IPO_indice_global].mMatricula,novoIPORegistro.mMatricula);
+    novaMarcacao[IPO_indice_global].tipoIpo=novoIPORegistro.tipoIpo;
+    IPO_indice_global++;
 }

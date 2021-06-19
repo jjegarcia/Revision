@@ -53,6 +53,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="main.h" />
+		<Unit filename="utiles.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="utiles.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

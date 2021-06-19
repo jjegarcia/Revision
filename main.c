@@ -10,8 +10,9 @@
 #include "main.h"
 #include "NovoVeiculo.h"
 #include "MarcarIPO.h"
+#include "RegistarIPO.h"
 int main(){
-indice=0;
+indice_global=0;
 SetConsoleTitle("Software Centro IPO");
 setlocale(LC_ALL,"");
 char escolha='7';
@@ -30,12 +31,13 @@ char escolha='7';
      printf("\n");
         switch(escolha){
          case '1':
-            pedirNovoVeiculo(indice);
+            pedirNovoVeiculo(indice_global);
              break;
          case '2':
-             marcarNovaIPO(indice);
+             marcarNovaIPO(indice_global);
              break;
-         case '3':/* Registar Inspeção*/
+         case '3':
+             novoRegisto(indice_global);
              break;
          case '4':/*Listar*/
              break;
