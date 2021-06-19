@@ -22,7 +22,7 @@ void marcarData ()
 {
     int resposta =-1;
     do {
-        printf("\nInsira a data da marcação:");
+        printf("\nInsira a data da marcaÃ§Ã£o:");
         novoIPORegistro.novaData.dia=dia();
         novoIPORegistro.novaData.mes=mes();
         novoIPORegistro.novaData.ano=ano();
@@ -41,7 +41,7 @@ int marcarMatricula ()
     resposta=encontraMatricula(novoIPORegistro.mMatricula);
     if (resposta==-1)
         {
-            printf("\nMatrícula Inexistente");
+            printf("\nMatrÃ­cula Inexistente");
          }
         else {
             valido=0;
@@ -50,25 +50,22 @@ int marcarMatricula ()
 }
 void marcarTipo ()
 {
-    int t;
-    do
-    {
-        printf("\nSelecione o tipo de inspeção:\n");
-        printf("1.Periódica\t2.Reinspeção\t3.Nova Matr\t4.Extraordinária\t");
-        scanf("%d", &t);
-        if (t!=1&&t!=2&&t!=3&&t!=4)
-            {
-                printf("\nOpção Inválida");
-            }
+    int valido=0;
+    fflush(stdin);
+    while (valido==0){
+        printf("\nSelecione o tipo de inspeÃ§Ã£o:\n");
+        printf("1.PeriÃ³dica\t2.ReinspeÃ§Ã£o\t4.ExtraordinÃ¡ria\t");
+        scanf("%d", &novoIPORegistro.tipoIpo);
+        if (novoIPORegistro.tipoIpo>0 && novoIPORegistro.tipoIpo<5){
+            valido=1;
+        }
     }
-    while (t!=1&&t!=2&&t!=3&&t!=4);
-    novaMarcacao[indice].tipoIpo[0]=t;
-}
+ }
 
 void marcarIPO(){
-    guardar(novaMarcacao[IPO_indice_global].novaData.mes,novoIPORegistro.novaData.mes);
-    guardar(novaMarcacao[IPO_indice_global].novaData.ano,novoIPORegistro.novaData.ano);
-    guardar(novaMarcacao[IPO_indice_global].novaData.dia,novoIPORegistro.novaData.dia);
+    novaMarcacao[IPO_indice_global].novaData.mes=novoIPORegistro.novaData.dia;
+    novaMarcacao[IPO_indice_global].novaData.ano=novoIPORegistro.novaData.ano;
+    novaMarcacao[IPO_indice_global].novaData.dia=novoIPORegistro.novaData.dia;
     guardar(novaMarcacao[IPO_indice_global].mMatricula,novoIPORegistro.mMatricula);
     novaMarcacao[IPO_indice_global].tipoIpo=novoIPORegistro.tipoIpo;
     IPO_indice_global++;
