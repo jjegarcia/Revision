@@ -147,7 +147,7 @@
 
 1624047695 c:\users\lauri\github\revision\utiles.h
 
-1624118941 source:c:\users\santi\onedrive\documentos\github\revision\listar.c
+1624121099 source:c:\users\santi\onedrive\documentos\github\revision\listar.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -170,7 +170,7 @@
 	<math.h>
 	<stdlib.h>
 
-1624119091 source:c:\users\santi\onedrive\documentos\github\revision\main.c
+1624119901 source:c:\users\santi\onedrive\documentos\github\revision\main.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -189,12 +189,12 @@
 1624023418 c:\users\santi\onedrive\documentos\github\revision\novoveiculo.h
 	"utiles.h"
 
-1624119448 c:\users\santi\onedrive\documentos\github\revision\utiles.h
+1624119901 c:\users\santi\onedrive\documentos\github\revision\utiles.h
 
 1624031582 c:\users\santi\onedrive\documentos\github\revision\marcaripo.h
 	"utiles.h"
 
-1624119091 source:c:\users\santi\onedrive\documentos\github\revision\marcaripo.c
+1624119901 source:c:\users\santi\onedrive\documentos\github\revision\marcaripo.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -208,7 +208,7 @@
 	"MarcarIPO.h"
 	"main.h"
 
-1624119235 source:c:\users\santi\onedrive\documentos\github\revision\novoveiculo.c
+1624119901 source:c:\users\santi\onedrive\documentos\github\revision\novoveiculo.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -223,7 +223,7 @@
 	"utiles.h"
 	"main.h"
 
-1624119091 source:c:\users\santi\onedrive\documentos\github\revision\registaripo.c
+1624119901 source:c:\users\santi\onedrive\documentos\github\revision\registaripo.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -237,13 +237,13 @@
 	"utiles.h"
 	"main.h"
 
-1624119091 source:c:\users\santi\onedrive\documentos\github\revision\utiles.c
+1624119901 source:c:\users\santi\onedrive\documentos\github\revision\utiles.c
 	<stdio.h>
 	<string.h>
 	"utiles.h"
 	"main.h"
 
-1624107677 c:\users\santi\onedrive\documentos\github\revision\registaripo.h
+1624119901 c:\users\santi\onedrive\documentos\github\revision\registaripo.h
 
-1624107677 c:\users\santi\onedrive\documentos\github\revision\listar.h
+1624119901 c:\users\santi\onedrive\documentos\github\revision\listar.h
 

@@ -41,7 +41,7 @@ void listar ()
          case '0':
              return main();
              break;
-         default: printf("\n\t\t\t\t  OPÇÃO INVÁLIDA\n");}}
+         default: printf("\n\t\t\t\t  OPÇÃO INVALIDA\n");}}
     while (escolha !=0);
 }
 
@@ -66,7 +66,7 @@ void MList ()
 {
     int loop;
     printf("Data Marcação\t\tMatricula\t\tTipo IPO\n");
-    for(loop=0; loop<IPO_indice_global;loop++);
+    for(loop=0; loop<IPO_indice_global;loop++)
     printf("%d/%d/%d\t\t%s\t\t%d",
            novaMarcacao[loop].novaData.dia,
            novaMarcacao[loop].novaData.mes,
