@@ -28,13 +28,13 @@ void pedirMatricula()
     fflush(stdin);
     while(valido==0)
     {
-    printf("Matr�cula:\t");
+    printf("Matrícula:\t");
     scanf("%s",matricula);
     if (vazio !=0){
         resposta= encontraMatricula(matricula);
         if (resposta!=-1)
             {
-                printf("Matr�cula existente");
+                printf("Matrícula existente");
             }
             else {
                     valido=1;
@@ -53,6 +53,7 @@ void pedirtVeiculo ()
 {
     int valido=0;
     fflush(stdin);
+
     int tipoVeiculo=-1;
     while (valido==0){
     printf("Tipo de Veiculo:\n");
@@ -68,15 +69,32 @@ void pedirtVeiculo ()
 void pedirNome()
 {
     fflush(stdin);
-    printf("\nNome do Propriet�rio:\t");
+    printf("\nNome do Proprietário:\t");
     gets(listaVeiculos[indice_global] .proprietario);
 }
 
 void pedirDataIPO()
 {
     fflush(stdin);
-    printf("\nData �ltima IPO:\t");
+    printf("\nData última IPO:\t");
     listaVeiculos[indice_global].dataUltima.dia= dia();
     listaVeiculos[indice_global].dataUltima.mes=mes();
     listaVeiculos[indice_global].dataUltima.ano=ano();
+}
+void pedirUltResultado()
+{
+    fflush(stdin);
+    int r;
+    do
+        {
+            fflush(stdin);
+            printf("\n Insira o resultado da última IPO: \n1.Aprovado\n0.Reprovado\n");
+            scanf("%d",&r);
+            if (r!=1&&r!=0)
+                {
+                    printf("\nOpção Inválida\n");
+                }
+        }
+    while(r!=1&&r!=0);
+listaVeiculos[indice_global].resultado=r;
 }
