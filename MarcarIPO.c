@@ -14,7 +14,7 @@ void marcarNovaIPO()
 {
     int matricula_indice=-1;
     marcarData();
-    matricula_indice=marcarMatricula();
+    matricula_indice=buscaMatricula();
     marcarTipo();
     marcarIPO();
 }
@@ -29,7 +29,7 @@ void marcarData ()
         resposta=contarData(novoIPORegistro.novaData);
     } while(resposta==-1);
 }
-int marcarMatricula ()
+int buscaMatricula ()
 {
     int resposta=-1;
     int valido=1;
@@ -47,7 +47,9 @@ int marcarMatricula ()
             valido=0;
         }
     }
+    return resposta;
 }
+
 void marcarTipo ()
 {
     int valido=0;
