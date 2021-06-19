@@ -50,15 +50,22 @@ int marcarMatricula ()
 }
 void marcarTipo ()
 {
-    printf("\nSelecione o tipo de inspeção:\n");
-    printf("1.Periódica\t2.Reinspeção\t4.Extraordinária\t");
-    scanf("%d", &novoIPORegistro.tipoIpo);
-}
+    int valido=0;
+    fflush(stdin);
+    while (valido==0){
+        printf("\nSelecione o tipo de inspeção:\n");
+        printf("1.Periódica\t2.Reinspeção\t4.Extraordinária\t");
+        scanf("%d", &novoIPORegistro.tipoIpo);
+        if (novoIPORegistro.tipoIpo>0 && novoIPORegistro.tipoIpo<5){
+            valido=1;
+        }
+    }
+ }
 
 void marcarIPO(){
-    guardar(novaMarcacao[IPO_indice_global].novaData.mes,novoIPORegistro.novaData.mes);
-    guardar(novaMarcacao[IPO_indice_global].novaData.ano,novoIPORegistro.novaData.ano);
-    guardar(novaMarcacao[IPO_indice_global].novaData.dia,novoIPORegistro.novaData.dia);
+    novaMarcacao[IPO_indice_global].novaData.mes=novoIPORegistro.novaData.dia;
+    novaMarcacao[IPO_indice_global].novaData.ano=novoIPORegistro.novaData.ano;
+    novaMarcacao[IPO_indice_global].novaData.dia=novoIPORegistro.novaData.dia;
     guardar(novaMarcacao[IPO_indice_global].mMatricula,novoIPORegistro.mMatricula);
     novaMarcacao[IPO_indice_global].tipoIpo=novoIPORegistro.tipoIpo;
     IPO_indice_global++;
