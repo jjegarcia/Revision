@@ -36,7 +36,7 @@ int marcarMatricula ()
     fflush(stdin);
     while(valido==1)
     {
-    printf("\nInsira a matricula:");
+    printf("\nInsira a matrícula:");
     scanf ("%s",&novoIPORegistro.mMatricula);
     resposta=encontraMatricula(novoIPORegistro.mMatricula);
     if (resposta==-1)

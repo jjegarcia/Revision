@@ -11,6 +11,7 @@
 #include "NovoVeiculo.h"
 #include "MarcarIPO.h"
 #include "RegistarIPO.h"
+#include "Listar.h"
 int main(){
 indice_global=0;
 SetConsoleTitle("Software Centro IPO");
@@ -37,9 +38,10 @@ char escolha='7';
              marcarNovaIPO(indice_global);
              break;
          case '3':
-             novoRegisto(indice_global);
+             //novoRegisto(indice_global);
              break;
-         case '4':/*Listar*/
+         case '4':
+             listar();
              break;
          case '5':/* Informações*/
              break;
