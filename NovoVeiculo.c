@@ -22,7 +22,7 @@ void pedirNovoVeiculo ()
 
 void pedirMatricula()
 {
-    int resposta;
+    int resposta=-1;
     int valido=0;
     char matricula[8];
     fflush(stdin);
@@ -53,7 +53,7 @@ void pedirtVeiculo ()
 {
     int valido=0;
     fflush(stdin);
-    int tipoVeiculo;
+    int tipoVeiculo=-1;
     while (valido==0){
     printf("Tipo de Veiculo:\n");
     printf("1.Ligeiro\n2.Pesado\n3.Reboque\n4.Motociclo\n");
