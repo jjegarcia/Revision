@@ -159,7 +159,7 @@
 
 1624113963 c:\users\lauri\github\revision\utiles.h
 
-1623843043 source:c:\users\santi\onedrive\documentos\github\revision\listar.c
+1624125026 source:c:\users\santi\onedrive\documentos\github\revision\listar.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -170,8 +170,18 @@
 	<math.h>
 	<stdlib.h>
 	"main.h"
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<string.h>
+	<conio.h>
+	<Windows.h>
+	<ctype.h>
+	<math.h>
+	<stdlib.h>
+	"utiles.h"
 
-1623843043 c:\users\santi\onedrive\documentos\github\revision\main.h
+1624119091 c:\users\santi\onedrive\documentos\github\revision\main.h
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -182,7 +192,7 @@
 	<math.h>
 	<stdlib.h>
 
-1624023003 source:c:\users\santi\onedrive\documentos\github\revision\main.c
+1624125026 source:c:\users\santi\onedrive\documentos\github\revision\main.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -195,16 +205,17 @@
 	"main.h"
 	"NovoVeiculo.h"
 	"MarcarIPO.h"
+	"RegistarIPO.h"
 
-1624023003 c:\users\santi\onedrive\documentos\github\revision\novoveiculo.h
+1624023418 c:\users\santi\onedrive\documentos\github\revision\novoveiculo.h
 	"utiles.h"
 
-1624023003 c:\users\santi\onedrive\documentos\github\revision\utiles.h
+1624125026 c:\users\santi\onedrive\documentos\github\revision\utiles.h
 
-1624023003 c:\users\santi\onedrive\documentos\github\revision\marcaripo.h
+1624031582 c:\users\santi\onedrive\documentos\github\revision\marcaripo.h
 	"utiles.h"
 
-1624023003 source:c:\users\santi\onedrive\documentos\github\revision\marcaripo.c
+1624125026 source:c:\users\santi\onedrive\documentos\github\revision\marcaripo.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -217,7 +228,7 @@
 	"main.h"
 	"MarcarIPO.h"
 
-1624023003 source:c:\users\santi\onedrive\documentos\github\revision\novoveiculo.c
+1624125026 source:c:\users\santi\onedrive\documentos\github\revision\novoveiculo.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -231,7 +242,18 @@
 	"MarcarIPO.h"
 	"utiles.h"
 
-1624023003 source:c:\users\santi\onedrive\documentos\github\revision\registaripo.c
+1624125026 source:c:\users\santi\onedrive\documentos\github\revision\registaripo.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<string.h>
+	<conio.h>
+	<Windows.h>
+	<ctype.h>
+	<math.h>
+	<stdlib.h>
+	"RegistarIPO.h"
+	"utiles.h"
 
 1624023003 source:c:\users\santi\onedrive\documentos\github\revision\utiles.c
 	<stdio.h>
@@ -239,4 +261,6 @@
 	"utiles.h"
 
 1624113615 c:\users\lauri\github\revision\registaripo.h
+
+1624125026 c:\users\santi\onedrive\documentos\github\revision\registaripo.h
 
