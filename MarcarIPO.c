@@ -22,7 +22,7 @@ void marcarData ()
 {
     int resposta =-1;
     do {
-        printf("\nInsira a data da marcação:");
+        printf("\nInsira a data da marcaÃ§Ã£o:");
         novoIPORegistro.novaData.dia=dia();
         novoIPORegistro.novaData.mes=mes();
         novoIPORegistro.novaData.ano=ano();
@@ -41,7 +41,7 @@ int marcarMatricula ()
     resposta=encontraMatricula(novoIPORegistro.mMatricula);
     if (resposta==-1)
         {
-            printf("Matrícula Inexistente");
+            printf("\nMatrÃ­cula Inexistente");
          }
         else {
             valido=0;
@@ -53,8 +53,8 @@ void marcarTipo ()
     int valido=0;
     fflush(stdin);
     while (valido==0){
-        printf("\nSelecione o tipo de inspeção:\n");
-        printf("1.Periódica\t2.Reinspeção\t4.Extraordinária\t");
+        printf("\nSelecione o tipo de inspeÃ§Ã£o:\n");
+        printf("1.PeriÃ³dica\t2.ReinspeÃ§Ã£o\t4.ExtraordinÃ¡ria\t");
         scanf("%d", &novoIPORegistro.tipoIpo);
         if (novoIPORegistro.tipoIpo>0 && novoIPORegistro.tipoIpo<5){
             valido=1;
