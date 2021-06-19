@@ -68,7 +68,7 @@
 
 1623398209 source:c:\users\santi\onedrive\documentos\projeto programação\registaripo.c
 
-1624113030 source:c:\users\lauri\github\revision\listar.c
+1624127676 source:c:\users\lauri\github\revision\listar.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -79,8 +79,19 @@
 	<math.h>
 	<stdlib.h>
 	"main.h"
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<string.h>
+	<conio.h>
+	<Windows.h>
+	<ctype.h>
+	<math.h>
+	<stdlib.h>
+	"utiles.h"
+	"Listar.h"
 
-1624112418 c:\users\lauri\github\revision\main.h
+1624127676 c:\users\lauri\github\revision\main.h
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -91,7 +102,7 @@
 	<math.h>
 	<stdlib.h>
 
-1624113243 source:c:\users\lauri\github\revision\main.c
+1624127676 source:c:\users\lauri\github\revision\main.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -112,7 +123,7 @@
 1624113243 c:\users\lauri\github\revision\marcaripo.h
 	"utiles.h"
 
-1624114223 source:c:\users\lauri\github\revision\marcaripo.c
+1624131328 source:c:\users\lauri\github\revision\marcaripo.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -125,7 +136,7 @@
 	"main.h"
 	"MarcarIPO.h"
 
-1624113030 source:c:\users\lauri\github\revision\novoveiculo.c
+1624127676 source:c:\users\lauri\github\revision\novoveiculo.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -139,7 +150,7 @@
 	"MarcarIPO.h"
 	"utiles.h"
 
-1624118819 source:c:\users\lauri\github\revision\registaripo.c
+1624127676 source:c:\users\lauri\github\revision\registaripo.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -152,12 +163,12 @@
 	"RegistarIPO.h"
 	"utiles.h"
 
-1624113243 source:c:\users\lauri\github\revision\utiles.c
+1624127676 source:c:\users\lauri\github\revision\utiles.c
 	<stdio.h>
 	<string.h>
 	"utiles.h"
 
-1624113963 c:\users\lauri\github\revision\utiles.h
+1624127676 c:\users\lauri\github\revision\utiles.h
 
 1624127142 source:c:\users\santi\onedrive\documentos\github\revision\listar.c
 	<stdio.h>
@@ -261,9 +272,20 @@
 	<string.h>
 	"utiles.h"
 
-1624113615 c:\users\lauri\github\revision\registaripo.h
+1624127676 c:\users\lauri\github\revision\registaripo.h
 
 1624125026 c:\users\santi\onedrive\documentos\github\revision\registaripo.h
 
 1624127041 c:\users\santi\onedrive\documentos\github\revision\listar.h
+
+1624127676 c:\users\lauri\github\revision\listar.h
+
+1624131328 source:c:\users\lauri\github\revision\log.c
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	"log.h"
+	"utiles.h"
+
+1624131328 c:\users\lauri\github\revision\log.h
 
