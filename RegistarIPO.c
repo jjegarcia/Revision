@@ -75,10 +75,10 @@ void custoIPO (int indice)
         }
     }
     while (c!=1&&c!=2&&c!=3&&c!=4);
-    for (c=1;registo[indice_global].custo==31.49;);
-    for (c=2;registo[indice_global].custo==7.9;);
-    for (c=3;registo[indice_global].custo==78.6;);
-    for (c=4;registo[indice_global].custo==109.93;);
+    for (c==1;registo[indice_global].custo==31.49;);
+    for (c==2;registo[indice_global].custo==7.9;);
+    for (c==3;registo[indice_global].custo==78.6;);
+    for (c==4;registo[indice_global].custo==109.93;);
 }
 
 
