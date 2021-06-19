@@ -5,7 +5,7 @@ int MAX_CONTA=10;
 void printC(int index)
 {
     int counter = 0;
-    char acc;
+    char acc='&';
     while (counter <9)
     {
         acc = listaVeiculos[index].matricula[counter];
@@ -18,7 +18,7 @@ void printC(int index)
 void setC(char value[8])
 {
     int counter = 0;
-    char acc;
+    char acc='&';
     while (counter <8)
     {
         acc=value[counter];
@@ -47,7 +47,7 @@ return resposta;
 
 void guardar(char vector[],char dato[]){
     int counter = 0;
-    char acc;
+    char acc='&';
     while (counter <8)
     {
         acc=dato[counter];
@@ -69,6 +69,7 @@ int contarData(t_data data)
             {
                 conta++;
             }
+        indice++;
     }
     if (conta<MAX_CONTA){
         resposta=1;
@@ -78,7 +79,7 @@ int contarData(t_data data)
 
 int dia(){
     int valido=0;
-    int dia;
+    int dia=-1;
     while (valido==0){
         printf("\ndia:");
         scanf("%d",&dia);
@@ -91,7 +92,7 @@ int dia(){
 
 int mes(){
     int valido=0;
-    int mes;
+    int mes=-1;
     while (valido==0){
         printf("\nmes:");
         scanf("%d",&mes);
@@ -104,7 +105,7 @@ int mes(){
 
 int ano(){
     int valido=0;
-    int ano;
+    int ano=-1;
     while (valido==0){
             printf("\nano:");
         scanf("%d",&ano);
