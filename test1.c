@@ -87,3 +87,5 @@ void printC(tipo list[3], int index)
 
 // return value;
 // }
+
+
