@@ -39,7 +39,8 @@ char escolha='7';
          case '3':
              novoRegisto(indice_global);
              break;
-         case '4':/*Listar*/
+         case '4':
+             listar(indice_global);
              break;
          case '5':/* Informações*/
              break;

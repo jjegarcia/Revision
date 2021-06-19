@@ -159,7 +159,7 @@
 
 1624113963 c:\users\lauri\github\revision\utiles.h
 
-1624125026 source:c:\users\santi\onedrive\documentos\github\revision\listar.c
+1624127142 source:c:\users\santi\onedrive\documentos\github\revision\listar.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -180,8 +180,9 @@
 	<math.h>
 	<stdlib.h>
 	"utiles.h"
+	"Listar.h"
 
-1624119091 c:\users\santi\onedrive\documentos\github\revision\main.h
+1624126322 c:\users\santi\onedrive\documentos\github\revision\main.h
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -210,12 +211,12 @@
 1624023418 c:\users\santi\onedrive\documentos\github\revision\novoveiculo.h
 	"utiles.h"
 
-1624125026 c:\users\santi\onedrive\documentos\github\revision\utiles.h
+1624125526 c:\users\santi\onedrive\documentos\github\revision\utiles.h
 
 1624031582 c:\users\santi\onedrive\documentos\github\revision\marcaripo.h
 	"utiles.h"
 
-1624125026 source:c:\users\santi\onedrive\documentos\github\revision\marcaripo.c
+1624126801 source:c:\users\santi\onedrive\documentos\github\revision\marcaripo.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -228,7 +229,7 @@
 	"main.h"
 	"MarcarIPO.h"
 
-1624125026 source:c:\users\santi\onedrive\documentos\github\revision\novoveiculo.c
+1624126832 source:c:\users\santi\onedrive\documentos\github\revision\novoveiculo.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -242,7 +243,7 @@
 	"MarcarIPO.h"
 	"utiles.h"
 
-1624125026 source:c:\users\santi\onedrive\documentos\github\revision\registaripo.c
+1624126842 source:c:\users\santi\onedrive\documentos\github\revision\registaripo.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -255,7 +256,7 @@
 	"RegistarIPO.h"
 	"utiles.h"
 
-1624023003 source:c:\users\santi\onedrive\documentos\github\revision\utiles.c
+1624125600 source:c:\users\santi\onedrive\documentos\github\revision\utiles.c
 	<stdio.h>
 	<string.h>
 	"utiles.h"
@@ -263,4 +264,6 @@
 1624113615 c:\users\lauri\github\revision\registaripo.h
 
 1624125026 c:\users\santi\onedrive\documentos\github\revision\registaripo.h
+
+1624127041 c:\users\santi\onedrive\documentos\github\revision\listar.h
 

@@ -2,20 +2,8 @@
 #include <string.h>
 #include "utiles.h"
 int MAX_CONTA=10;
-void printC(int index)
-{
-    int counter = 0;
-    char acc='&';
-    while (counter <9)
-    {
-        acc = listaVeiculos[index].matricula[counter];
-        printf("%c", acc);
-        counter++;
-    }
-    printf("\n");
-}
 
-void setC(char value[8])
+void guardarString(char value[8])
 {
     int counter = 0;
     char acc='&';
@@ -63,9 +51,9 @@ int contarData(t_data data)
     int indice=0;
     while (indice<IPO_indice_global)
     {
-        if (novaMarcacao[indice].novaData.ano==data.ano &&
-            novaMarcacao[indice].novaData.dia==data.dia &&
-            novaMarcacao[indice].novaData.mes==data.mes)
+        if (listaMarcacao[indice].novaData.ano==data.ano &&
+            listaMarcacao[indice].novaData.dia==data.dia &&
+            listaMarcacao[indice].novaData.mes==data.mes)
             {
                 conta++;
             }
@@ -121,7 +109,7 @@ int contarMatricula(char matricula[8])
     int indice=0;
     while (indice<IPO_indice_global)
     {
-        if (strcmp(novaMarcacao[indice].mMatricula,matricula)==0)
+        if (strcmp(listaMarcacao[indice].mMatricula,matricula)==0)
             {
                 conta++;
             }

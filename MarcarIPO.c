@@ -22,11 +22,11 @@ void marcarData ()
 {
     int resposta =-1;
     do {
-        printf("\nInsira a data da marcação:");
-        novoIPORegistro.novaData.dia=dia();
-        novoIPORegistro.novaData.mes=mes();
-        novoIPORegistro.novaData.ano=ano();
-        resposta=contarData(novoIPORegistro.novaData);
+        printf("\nInsira a data da marcacao:");
+        novoRegistoIPO.novaData.dia=dia();
+        novoRegistoIPO.novaData.mes=mes();
+        novoRegistoIPO.novaData.ano=ano();
+        resposta=contarData(novoRegistoIPO.novaData);
     } while(resposta==-1);
 }
 int buscaMatricula ()
@@ -37,11 +37,11 @@ int buscaMatricula ()
     while(valido==1)
     {
     printf("\nInsira a matricula:");
-    scanf ("%s",&novoIPORegistro.mMatricula);
-    resposta=encontraMatricula(novoIPORegistro.mMatricula);
+    scanf ("%s",&novoRegistoIPO.mMatricula);
+    resposta=encontraMatricula(novoRegistoIPO.mMatricula);
     if (resposta==-1)
         {
-            printf("\nMatrícula Inexistente");
+            printf("\nMatricula Inexistente");
          }
         else {
             valido=0;
@@ -55,20 +55,20 @@ void marcarTipo ()
     int valido=0;
     fflush(stdin);
     while (valido==0){
-        printf("\nSelecione o tipo de inspeção:\n");
-        printf("1.Periódica\t2.Reinspeção\t4.Extraordinária\t");
-        scanf("%d", &novoIPORegistro.tipoIpo);
-        if (novoIPORegistro.tipoIpo>0 && novoIPORegistro.tipoIpo<5){
+        printf("\nSelecione o tipo de inspecao:\n");
+        printf("1.Periodica\t2.Reinspecao\t4.Extraordinaria\t");
+        scanf("%d", &novoRegistoIPO.tipoIpo);
+        if (novoRegistoIPO.tipoIpo>0 && novoRegistoIPO.tipoIpo<5){
             valido=1;
         }
     }
  }
 
 void marcarIPO(){
-    novaMarcacao[IPO_indice_global].novaData.mes=novoIPORegistro.novaData.dia;
-    novaMarcacao[IPO_indice_global].novaData.ano=novoIPORegistro.novaData.ano;
-    novaMarcacao[IPO_indice_global].novaData.dia=novoIPORegistro.novaData.dia;
-    guardar(novaMarcacao[IPO_indice_global].mMatricula,novoIPORegistro.mMatricula);
-    novaMarcacao[IPO_indice_global].tipoIpo=novoIPORegistro.tipoIpo;
+    listaMarcacao[IPO_indice_global].novaData.mes=novoRegistoIPO.novaData.dia;
+    listaMarcacao[IPO_indice_global].novaData.ano=novoRegistoIPO.novaData.ano;
+    listaMarcacao[IPO_indice_global].novaData.dia=novoRegistoIPO.novaData.dia;
+    guardar(listaMarcacao[IPO_indice_global].mMatricula,novoRegistoIPO.mMatricula);
+    listaMarcacao[IPO_indice_global].tipoIpo=novoRegistoIPO.tipoIpo;
     IPO_indice_global++;
 }
