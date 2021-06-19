@@ -188,12 +188,53 @@
 1624023418 c:\users\santi\onedrive\documentos\github\revision\novoveiculo.h
 	"utiles.h"
 
-1624034331 c:\users\santi\onedrive\documentos\github\revision\utiles.h
+1624097993 ated upstream
+
+1624098539 c:\users\santi\onedrive\documentos\github\revision\utiles.h
+
+1624097992 shed changes
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<string.h>
+	<conio.h>
+	<Windows.h>
+	<ctype.h>
+	<math.h>
+	<stdlib.h>
+	"main.h"
+	"MarcarIPO.h"
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<string.h>
+	<conio.h>
+	<Windows.h>
+	<ctype.h>
+	<math.h>
+	<stdlib.h>
+	"NovoVeiculo.h"
+	"MarcarIPO.h"
+	"utiles.h"
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<string.h>
+	<conio.h>
+	<Windows.h>
+	<ctype.h>
+	<math.h>
+	<stdlib.h>
+	"RegistarIPO.h"
+	"utiles.h"
+	<stdio.h>
+	<string.h>
+	"utiles.h"
 
 1624031582 c:\users\santi\onedrive\documentos\github\revision\marcaripo.h
 	"utiles.h"
 
-1624034944 source:c:\users\santi\onedrive\documentos\github\revision\marcaripo.c
+1624098540 source:c:\users\santi\onedrive\documentos\github\revision\marcaripo.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -206,7 +247,7 @@
 	"main.h"
 	"MarcarIPO.h"
 
-1624034926 source:c:\users\santi\onedrive\documentos\github\revision\novoveiculo.c
+1624098627 source:c:\users\santi\onedrive\documentos\github\revision\novoveiculo.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -220,7 +261,7 @@
 	"MarcarIPO.h"
 	"utiles.h"
 
-1624032630 source:c:\users\santi\onedrive\documentos\github\revision\registaripo.c
+1624098539 source:c:\users\santi\onedrive\documentos\github\revision\registaripo.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -233,10 +274,10 @@
 	"RegistarIPO.h"
 	"utiles.h"
 
-1624031770 source:c:\users\santi\onedrive\documentos\github\revision\utiles.c
+1624098539 source:c:\users\santi\onedrive\documentos\github\revision\utiles.c
 	<stdio.h>
 	<string.h>
 	"utiles.h"
 
-1624023418 c:\users\santi\onedrive\documentos\github\revision\registaripo.h
+1624097992 c:\users\santi\onedrive\documentos\github\revision\registaripo.h
 

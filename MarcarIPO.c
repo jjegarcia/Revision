@@ -12,6 +12,7 @@
 
 void marcarNovaIPO()
 {
+    setlocale(LC_ALL,"");
     int matricula_indice=-1;
     marcarData();
     matricula_indice=marcarMatricula();
@@ -64,7 +65,7 @@ void marcarTipo ()
     do
     {
         printf("\nSelecione o tipo de inspeção:\n");
-        printf("1.Periódica\t2.Reinspeção\t3.Nova Matr\t4.Extraordinária\t");
+        printf("1.Periódica\t2.Reinspeção\t3.Nova Matrícula\t4.Extraordinária\t");
         scanf("%d", &t);
         if (t!=1&&t!=2&&t!=3&&t!=4)
             {
@@ -73,6 +74,7 @@ void marcarTipo ()
     }
     while (t!=1&&t!=2&&t!=3&&t!=4);
     novaMarcacao[IPO_indice_global].tipoIpo=t;
+    novaMarcacao[indice_global].tipoIpo=t;
 }
 
 void marcarIPO(){
