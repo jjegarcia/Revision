@@ -73,19 +73,22 @@ void anotacoesIPO ()
 
 void custoIPO (int indice)
 {
-    float c;
+    novaMarcacao[indice_novaMarcacao].custo=-1;
+    char c='&';
     fflush(stdin);
-    do{
-        printf("\nCusto da IPO:\n1.Inspeção\n2.Reinspeção\n3.Nova matricula\n4.Extraordinaria\n");
-        scanf("%f",&c);
-        if (c!=1&&c!=2&&c!=3&&c!=4)
-        {
-            printf("\nOpção Inválida\n");
-        }
-    }
-    while (c!=1&&c!=2&&c!=3&&c!=4);
-    for (c==1;novaMarcacao[indice_novaMarcacao].custo==31.49;);
-    for (c==2;novaMarcacao[indice_novaMarcacao].custo==7.9;);
-    for (c==3;novaMarcacao[indice_novaMarcacao].custo==78.6;);
-    for (c==4;novaMarcacao[indice_novaMarcacao].custo==109.93;);
+        do{
+            printf("\nCusto da IPO:\n1.Inspeção\n2.Reinspeção\n3.Nova matricula\n4.Extraordinaria\n");
+            scanf("%c",&c);
+            switch (c){
+                case '1':novaMarcacao[indice_novaMarcacao].custo=31.49;
+                break;
+                case '2':novaMarcacao[indice_novaMarcacao].custo=7.9;
+                break;
+                case '3':novaMarcacao[indice_novaMarcacao].custo=78.6;
+                break;
+                case '4':novaMarcacao[indice_novaMarcacao].custo=109.93;
+                break;
+                default: printf("\n\t\t\t\t  OPÇÃO INVÁLIDA\n");
+            }
+        } while(novaMarcacao[indice_novaMarcacao].custo==-1);
 }
