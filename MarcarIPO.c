@@ -66,8 +66,8 @@ void marcarTipo ()
 
 void marcarIPO(){
     listaMarcacao[IPO_indice_global].novaData.mes=novoRegistoIPO.novaData.dia;
-    listaMarcacao[IPO_indice_global].novaData.ano=novoRegistoIPO.novaData.ano;
-    listaMarcacao[IPO_indice_global].novaData.dia=novoRegistoIPO.novaData.dia;
+    listaMarcacao[IPO_indice_global].novaData.ano=novoRegistoIPO.novaData.mes;
+    listaMarcacao[IPO_indice_global].novaData.dia=novoRegistoIPO.novaData.ano;
     guardar(listaMarcacao[IPO_indice_global].mMatricula,novoRegistoIPO.mMatricula);
     listaMarcacao[IPO_indice_global].tipoIpo=novoRegistoIPO.tipoIpo;
     IPO_indice_global++;
