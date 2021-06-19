@@ -10,6 +10,7 @@
 #include "NovoVeiculo.h"
 #include "MarcarIPO.h"
 #include "utiles.h"
+#include "main.h"
 
 void pedirNovoVeiculo ()
 {

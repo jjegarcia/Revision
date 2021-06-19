@@ -13,7 +13,6 @@ typedef struct
 }t_fichaVeiculo;
 
 int vazio;
-int indice_global;
 t_fichaVeiculo listaVeiculos[50];
 
 typedef struct
@@ -21,15 +20,19 @@ typedef struct
     t_data novaData;
     char mMatricula[8];
     int tipoIpo;
+    char anot [200];
+    float custo;
+    int hora, minuto, duracao, resultado;
 }t_MarcarIPO;
 
 t_MarcarIPO novoIPORegistro;
-t_MarcarIPO novaMarcacao[300];
+t_MarcarIPO listaMarcacao[300];
 t_data dataMarc;
 int matcomp;
 t_fichaVeiculo matricula;
 char novaMatricula[8];
-int IPO_indice_global;
+
+int IPO_indice_global=0;
 
 
 void setC(char value[8]);

@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 #include "utiles.h"
+#include "main.h"
+
 int MAX_CONTA=10;
 void printC(int index)
 {
@@ -63,9 +65,9 @@ int contarData(t_data data)
     int indice=0;
     while (indice<IPO_indice_global)
     {
-        if (novaMarcacao[indice].novaData.ano==data.ano &&
-            novaMarcacao[indice].novaData.dia==data.dia &&
-            novaMarcacao[indice].novaData.mes==data.mes)
+        if (listaMarcacao[indice].novaData.ano==data.ano &&
+            listaMarcacao[indice].novaData.dia==data.dia &&
+            listaMarcacao[indice].novaData.mes==data.mes)
             {
                 conta++;
             }

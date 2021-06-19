@@ -12,6 +12,8 @@
 int nveiculos, nmarcadas;
 float receita;
 long int efetuadas;
+int indice_global=0;
+
 #endif // MAIN_H_INCLUDED
 
 

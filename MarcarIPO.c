@@ -9,15 +9,17 @@
 #include <stdlib.h>
 #include "main.h"
 #include "MarcarIPO.h"
+#include "utiles.h"
 
 void marcarNovaIPO()
 {
     int matricula_indice=-1;
     marcarData();
-    matricula_indice=marcarMatricula();
+    matricula_indice=buscaMatricula();
     marcarTipo();
     marcarIPO();
 }
+
 void marcarData ()
 {
     int resposta =-1;
@@ -29,7 +31,8 @@ void marcarData ()
         resposta=contarData(novoIPORegistro.novaData);
     } while(resposta==-1);
 }
-int marcarMatricula ()
+
+int buscaMatricula ()
 {
     int resposta=-1;
     int valido=1;
@@ -47,7 +50,9 @@ int marcarMatricula ()
             valido=0;
         }
     }
+    return resposta;
 }
+
 void marcarTipo ()
 {
     int valido=0;
@@ -63,10 +68,10 @@ void marcarTipo ()
  }
 
 void marcarIPO(){
-    novaMarcacao[IPO_indice_global].novaData.mes=novoIPORegistro.novaData.dia;
-    novaMarcacao[IPO_indice_global].novaData.ano=novoIPORegistro.novaData.ano;
-    novaMarcacao[IPO_indice_global].novaData.dia=novoIPORegistro.novaData.dia;
-    guardar(novaMarcacao[IPO_indice_global].mMatricula,novoIPORegistro.mMatricula);
-    novaMarcacao[IPO_indice_global].tipoIpo=novoIPORegistro.tipoIpo;
+    listaMarcacao[IPO_indice_global].novaData.mes=novoIPORegistro.novaData.dia;
+    listaMarcacao[IPO_indice_global].novaData.ano=novoIPORegistro.novaData.ano;
+    listaMarcacao[IPO_indice_global].novaData.dia=novoIPORegistro.novaData.dia;
+    guardar(listaMarcacao[IPO_indice_global].mMatricula,novoIPORegistro.mMatricula);
+    listaMarcacao[IPO_indice_global].tipoIpo=novoIPORegistro.tipoIpo;
     IPO_indice_global++;
 }

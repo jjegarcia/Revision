@@ -11,8 +11,8 @@
 #include "NovoVeiculo.h"
 #include "MarcarIPO.h"
 #include "RegistarIPO.h"
+
 int main(){
-indice_global=0;
 SetConsoleTitle("Software Centro IPO");
 setlocale(LC_ALL,"");
 char escolha='7';

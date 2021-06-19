@@ -4,7 +4,7 @@
 
 void marcarNovaIPO();
 void marcarData();
-int marcarMatricula();
+int buscaMatricula();
 void marcarTipo();
 void marcarIPO();
 #endif // MARCARIPO_H_INCLUDED
