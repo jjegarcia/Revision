@@ -17,6 +17,7 @@ void pedirNovoVeiculo ()
     pedirtVeiculo();
     pedirNome();
     pedirDataIPO();
+    pedirUltResultado();
     indice_global++;
 }
 
