@@ -14,6 +14,8 @@ typedef struct
 
 int vazio;
 t_fichaVeiculo listaVeiculos[50];
+int indice_global=0;
+
 
 typedef struct
 {
